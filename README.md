@@ -1,9 +1,6 @@
 <pre>
 Jimmy Ba
 1)Layer Normalization 
- 
-
- 
 
 Batch Norm:
 + Stable if the batch size is large
@@ -27,7 +24,6 @@ Layer Norm:
 + Scale of update decreases while training
 - Might be not good at CNN?
 
-
 Layer normalization (Ba 2016): Does not use batch statistics. Normalize using the statistics collected from all units within a layer of the current sample. Does not work well with ConvNets.
 Recurrent Batch Normalization (BN) (Cooijmans, 2016; also proposed concurrently by https://arxiv.org/abs/1604.03640, but tested on Recurrent ConvNets, instead of RNN/LSTM): Same as batch normalization. Use different normalization statistics for each time step. You need to store a set of mean and standard deviation for each time step.
 Batch Normalized Recurrent Neural Networks (Laurent, 2015): batch normalization is only applied between the input and hidden state, but not between hidden states. i.e., normalization is not applied over time.
@@ -37,17 +33,17 @@ Cosine Normalization (Luo et al. 2017): weight normalization is very similar to 
 Note that both Weight and Cosine Normalization have been extensively used in 2000s in a class of ConvNets called HMAX (Riesenhuber 1999) to model biological vision. 
 2)Show Attend & Tell: Neural Image Caption Generation with Visual Attention
 •	Previous approaches:
-o	Object detection w/ attribute discovery
-o	Or, Modify based on similar captioned image from database
+  o	Object detection w/ attribute discovery
+  o	Or, Modify based on similar captioned image from database
 •	Encoder: Lower convolution layer of CNN captures spatial information
-o	Extract correspondence of feature vectors portion of 2D image helps interpret what model sees 
+  o	Extract correspondence of feature vectors portion of 2D image helps interpret what model sees 
 •	Decoder: LSTM which generates a caption word by word
 •	Using CNN, extract Annotation vector for each part of image, weighted by attention mechanism
 •	Attention mechanism:
-o	a “soft” deterministic attention mechanism trained back-propagation
-o	a “hard” stochastic attention mechanism trained maximizing an approximate variational lower bound (marginal log-likelihood log(p(y|a) of observing word sequence y given image features a.
-	doubly stochastic regularization attention does not strictly sum to 1, allows some “divided” attention
-o	adaptive learning rates w/ RMSProp or Adam algorithm 
+  o	a “soft” deterministic attention mechanism trained back-propagation
+  o	a “hard” stochastic attention mechanism trained maximizing an approximate variational lower bound (marginal log-likelihood log(p(y|a) of observing word sequence y given image features a.
+   	doubly stochastic regularization attention does not strictly sum to 1, allows some “divided” attention
+  o	adaptive learning rates w/ RMSProp or Adam algorithm 
 •	Evaluation: used BLEU & METEOR
 o	 
  
