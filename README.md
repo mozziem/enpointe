@@ -6,11 +6,29 @@
 
 ![image alt text](image_1.jpg)
 
-Batch Norm:+ Stable if the batch size is large+ Robust (in train) to the scale & shift of input data+ Robust to the scale of weight vector+ Scale of update decreases while training- Not good for online learning- Not good for RNN, LSTM- Different calculation between train and test
+Batch Norm:
++ Stable if the batch size is large
++ Robust (in train) to the scale & shift of input data
++ Robust to the scale of weight vector
++ Scale of update decreases while training
+- Not good for online learning
+- Not good for RNN, LSTM
+- Different calculation between train and test
 
-Weight Norm:+ Smaller calculation cost on CNN+ Well-considered about weight initialization+ Implementation is easy+ Robust to the scale of weight vector- Compared with the others, might be unstable on train?- High dependence to input data
+Weight Norm:
++ Smaller calculation cost on CNN
++ Well-considered about weight initialization
++ Implementation is easy
++ Robust to the scale of weight vector
+- Compared with the others, might be unstable on train?
+- High dependence to input data
 
-**Layer Norm:**+ Effective to small mini batch RNN+ Robust to the scale of input+ Robust to the scale and shift of weight matrix+ Scale of update decreases while training- Might be not good at CNN?
+**Layer Norm:**
++ Effective to small mini batch RNN
++ Robust to the scale of input
++ Robust to the scale and shift of weight matrix
++ Scale of update decreases while training
+- Might be not good at CNN?
 
 **Layer normalization** (Ba 2016): Does not use batch statistics. Normalize using the statistics collected from all units within a layer of the current sample. Does not work well with ConvNets.
 
