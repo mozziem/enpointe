@@ -146,9 +146,9 @@ Financial mathematics:
 
 * Pricing of American options, hedging, and dynamic selection of a portfolio. 
 
-[Pricing american derivatives using simulation a low biased approach](https://uwaterloo.ca/waterloo-research-institute-in-insurance-securities-and-quantitative-finance/sites/ca.waterloo-research-institute-in-insurance-securities-and-quantitative-finance/files/uploads/files/01-09.pdf) – Reading
+[Pricing american derivatives using simulation a low biased approach](https://uwaterloo.ca/waterloo-research-institute-in-insurance-securities-and-quantitative-finance/sites/ca.waterloo-research-institute-in-insurance-securities-and-quantitative-finance/files/uploads/files/01-09.pdf) 
 
-[An improved simulation method for pricing high-dimensional American derivatives](https://ai2-s2-pdfs.s3.amazonaws.com/9d03/d49490d960ced9241e274ab108b5ec64fd29.pdf) – still reading
+[An improved simulation method for pricing high-dimensional American derivatives](https://ai2-s2-pdfs.s3.amazonaws.com/9d03/d49490d960ced9241e274ab108b5ec64fd29.pdf) 
 
 * Pricing high-dimensional options has challenges
 
