@@ -102,7 +102,7 @@ Note that both Weight and Cosine Normalization have been extensively used in 200
 
 ![image alt text](image_4.jpg)![image alt text](image_5.png)![image alt text](image_6.png)
 
-* # of communities = # of non-zero columns of W and H
+* number of communities = number of non-zero columns of W and H
 
 * Assume no inter-dependency btw/ communities, existence of community doesn’t depend on others
 
